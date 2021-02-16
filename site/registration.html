@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Course Registration</title>
+  </head>
+  <body style="background-color:skyblue">
+    <img src="Nitw logo.jpg" style="text-align:right" width=15% height=15%>
+    <h1 style="text-align:center ">Welcome..</h1>
+    <h2 style="text-align:center ">Registration for Department Electives</h2>
+    <form class="" action="index.html" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="regno">Registration No:</label><br>
+        <input type="number" name="regno" id="regno"><br>
+        <label for="rollno">Roll no:</label><br>
+        <input type="number" name="rollno" id="rollno"><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Course details:</legend>
+        <label for="yos">Select stream</label><br>
+        <select class="" name="yos">
+          <option value="btech">B.Tech</option>
+          <option value="mtech">M.Tech</option>
+        </select><br><br>
+        <label for="year">Year of study:</label><br>
+        <select class="" name="year">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select><br><br>
+        <label for="branch">Branch:</label><br>
+        <select class="" name="branch">
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+        </select>
+      </fieldset>
+    <br>
+      <label for="selection">Choose only 1 Elective from each section:</label><br>
+      <fieldset>
+        <legend>For Even Semester</legend>
+        <input type="checkbox" name="e1" value="Web technologies">
+        <label for="e1">Web technologies</label><br>
+        <input type="checkbox" name="e2" value="Low power VLSI">
+        <label for="e2">Low power VLSI</label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>For Odd Semester</legend>
+        <input type="checkbox" name="e3" value="Internet of things">
+        <label for="e3">Internet of things</label><br>
+        <input type="checkbox" name="e4" value="Optimization techniques">
+        <label for="e4">Optimization techniques</label>
+      </fieldset>
+    <br>
+    <fieldset>
+      <legend>Contact Information:</legend>
+      <label for="telephone">Phone number:</label><br>
+      <input type="tel" name="telephone" placeholder="123-456-7890"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+      <label for="mail">Email address:</label><br>
+      <input type="email" name="mail" value="">
+    </fieldset>
+    <fieldset>
+      <legend>Feedback:</legend>
+      <label for="Feed">Write here:</label><br>
+      <textarea name="Feed" rows="8" cols="80"></textarea>
+    </fieldset>
+      <br>
+      <br>
+      <input type="submit" style="color:green" value="Submit">
+      <input type="reset" style="color:red" value="Reset">
+    </form>
+    <h1 style="text-align:center">Thank you...</h1>
+  </body>
+</html>
